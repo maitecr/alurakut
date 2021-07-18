@@ -227,7 +227,7 @@ export async function getServerSideProps(context) {
   const cookies = nookies.get(context);
   const token = cookies.USER_TOKEN;
   //Substituir com este link para subir para o vercel: https://alurakut-ten-sable.vercel.app/
-  const { isAuthenticated } = await fetch("http://localhost:3000/api/auth", {
+  const { isAuthenticated } = await fetch("https://alurakut-ten-sable.vercel.app", {
     headers: {
       Authorization: token,
     },
